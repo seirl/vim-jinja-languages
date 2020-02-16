@@ -1,8 +1,8 @@
-au BufNewFile,BufRead *.c.jinja2,*.c.j2 setf cjinja
-au BufNewFile,BufRead *.cpp.jinja2,*.cpp.j2,*.cc.jinja2,*.cc.j2,*.cxx.jinja2,*.cxx.j2,*.C.jinja2,*.C.j2 setf cppjinja
+au BufNewFile,BufRead *.c.jinja2,*.c.j2,*.h.jinja2,*.h.j2 setf cjinja
+au BufNewFile,BufRead *.cpp.jinja2,*.cpp.j2,*.cc.jinja2,*.cc.j2,*.cxx.jinja2,*.cxx.j2,*.C.jinja2,*.C.j2,*.hpp.jinja2,*.hpp.j2,*.hxx.jinja2,*.hxx.j2 setf cppjinja
 au BufNewFile,BufRead *.cs.jinja2,*.cs.j2 setf csjinja
 au BufNewFile,BufRead *.go.jinja2,*.go.j2 setf gojinja
-au BufNewFile,BufRead *.hs.jinja2,*.hs.j2 setf haskelljinja
+au BufNewFile,BufRead *.hs.jinja2,*.hs.j2,*.hsc.jinja2,*.hsc.j2 setf haskelljinja
 au BufNewFile,BufRead *.java.jinja2,*.java.j2 setf javajinja
 au BufNewFile,BufRead *.js.jinja2,*.js.j2 setf javascriptjinja
 au BufNewFile,BufRead *.lua.jinja2,*.lua.j2 setf luajinja

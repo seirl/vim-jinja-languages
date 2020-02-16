@@ -3,11 +3,11 @@
 from pathlib import Path
 
 LANGUAGES = {
-    'c': ['c'],
-    'cpp': ['cpp', 'cc', 'cxx', 'C'],
+    'c': ['c', 'h'],
+    'cpp': ['cpp', 'cc', 'cxx', 'C', 'hpp', 'hxx'],
     'cs': ['cs'],
     'go': ['go'],
-    'haskell': ['hs'],
+    'haskell': ['hs', 'hsc'],
     'java': ['java'],
     'javascript': ['js'],
     'lua': ['lua'],
