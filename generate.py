@@ -4,7 +4,7 @@ from pathlib import Path
 
 LANGUAGES = {
     'c': ['c', 'h'],
-    'cpp': ['cpp', 'cc', 'cxx', 'C', 'hpp', 'hxx'],
+    'cpp': ['cpp', 'cc', 'cxx', 'C', 'hh', 'hpp', 'hxx', 'H'],
     'cs': ['cs'],
     'go': ['go'],
     'haskell': ['hs', 'hsc'],
