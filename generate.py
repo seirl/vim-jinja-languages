@@ -3,22 +3,23 @@
 from pathlib import Path
 
 LANGUAGES = {
-    'c': ['c', 'h'],
-    'cpp': ['cpp', 'cc', 'cxx', 'C', 'hh', 'hpp', 'hxx', 'H'],
-    'cs': ['cs'],
-    'go': ['go'],
-    'haskell': ['hs', 'hsc'],
-    'java': ['java'],
-    'javascript': ['js'],
-    'lua': ['lua'],
-    'ocaml': ['ml', 'mli'],
-    'pascal': ['pas'],
-    'perl': ['pl'],
-    'php': ['php'],
-    'prolog': ['pro'],
-    'python': ['py'],
-    'ruby': ['rb'],
-    'rust': ['rs'],
+    'c': ['*.c', '*.h'],
+    'cpp': ['*.cpp', '*.cc', '*.cxx', '*.C', '*.hh', '*.hpp', '*.hxx', '*.H'],
+    'cs': ['*.cs'],
+    'go': ['*.go'],
+    'haskell': ['*.hs', '*.hsc'],
+    'java': ['*.java'],
+    'javascript': ['*.js'],
+    'lua': ['*.lua'],
+    'ocaml': ['*.ml', '*.mli'],
+    'pascal': ['*.pas'],
+    'perl': ['*.pl'],
+    'php': ['*.php'],
+    'prolog': ['*.pro'],
+    'python': ['*.py'],
+    'ruby': ['*.rb'],
+    'rust': ['*.rs'],
+    'make': ['Makefile*', '*.mk']
 }
 JINJA_EXTENSIONS = ['jinja2', 'j2']
 
@@ -43,7 +44,7 @@ PROJECT_DIR = Path(__file__).parent
 if __name__ == '__main__':
     with (PROJECT_DIR / 'ftdetect/langjinja.vim').open('w') as f:
         for lang, extensions in LANGUAGES.items():
-            ftmatch = ['*.{}.{}'.format(e, je)
+            ftmatch = ['{}.{}'.format(e, je)
                        for e in extensions
                        for je in JINJA_EXTENSIONS]
             f.write('au BufNewFile,BufRead {} setf {}jinja\n'.format(
