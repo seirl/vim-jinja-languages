@@ -15,3 +15,4 @@ au BufNewFile,BufRead *.py.jinja2,*.py.j2 setf pythonjinja
 au BufNewFile,BufRead *.rb.jinja2,*.rb.j2 setf rubyjinja
 au BufNewFile,BufRead *.rs.jinja2,*.rs.j2 setf rustjinja
 au BufNewFile,BufRead Makefile*.jinja2,Makefile*.j2,*.mk.jinja2,*.mk.j2 setf makejinja
+au BufNewFile,BufRead *.sql.jinja2,*.sql.j2 setf sqljinja

@@ -19,7 +19,8 @@ LANGUAGES = {
     'python': ['*.py'],
     'ruby': ['*.rb'],
     'rust': ['*.rs'],
-    'make': ['Makefile*', '*.mk']
+    'make': ['Makefile*', '*.mk'],
+    'sql': ['*.sql'],
 }
 JINJA_EXTENSIONS = ['jinja2', 'j2']
 
